@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+div.content {
+    padding: 6px;
+}
+
+div.content aside {
+    display: inline-block;
+}
+
+div.content section {
+    position: absolute;
+    display: inline-block;
+}
+
+header {
+    text-align: center;
+    background-color: darkslategray;
+}
+
+.title {
+    color: aliceblue;
+}
+
+.title > h1 {
+    font-size: 4em;
+    font-family: 'Darker Grotesque', sans-serif;
+    display: inline;
+}
+
+aside {
+    width: 20%;
+}
+
+aside h2 {
+    font-size: 1em;
+}
+
+aside p {
+    text-align: justify;
+}
+
+section {
+    width: 80%;
+    padding: 10px;
+}
+
+section h2 {
+    padding-top: 20px;
+    text-align: center;
+}
+
+section p {
+    padding: 0 100px;
+}
+
+section > p.first {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+p.first::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.perfil > img{
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    padding: 5px;
+    width: 200px;
+}
+
+.divide {
+    border: 5px solid #000;
+
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+}
