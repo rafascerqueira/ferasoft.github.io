@@ -14,6 +14,7 @@ div.content aside {
 }
 
 div.content section {
+    font-size: 20px;
     position: absolute;
     display: inline-block;
 }
@@ -46,7 +47,7 @@ aside p {
 }
 
 section {
-    width: 80%;
+    width: 70%;
     padding: 10px;
 }
 
@@ -83,4 +84,19 @@ p.first::first-letter {
 
 p {
     font-family: 'Raleway', sans-serif;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background-color: #c2c1c1;
+}
+
+footer p {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
 }
