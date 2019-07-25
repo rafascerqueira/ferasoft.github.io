@@ -21,17 +21,23 @@ div.content section {
 
 header {
     text-align: center;
-    background-color: darkslategray;
+    background-color: #2b96b6;
+    background-image: linear-gradient(to bottom right, #7de1ff, #2b96b6)
 }
 
 .title {
     color: aliceblue;
+    text-shadow: 2px 2px 4px #000;
 }
 
 .title > h1 {
     font-size: 4em;
     font-family: 'Darker Grotesque', sans-serif;
     display: inline;
+}
+
+.title .brackets {
+    font-size: 5em;
 }
 
 aside {
@@ -72,7 +78,7 @@ p.first::first-letter {
 
 .perfil > img{
     border-radius: 50%;
-    border: 2px solid #ddd;
+    border: 2px solid #2b96b6;
     padding: 5px;
     width: 200px;
 }
@@ -87,16 +93,23 @@ p {
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
-    height: 100px;
+    height: 124px;
     width: 100%;
-    background-color: #c2c1c1;
+    background-image: linear-gradient(to bottom right, #FFF, #797979)
 }
 
 footer p {
-    padding-top: 50px;
+    padding-top: 30px;
     text-align: center;
     font-size: 14px;
     font-weight: bold;
+}
+
+#credit-icon {
+    font-size: 10px;
+}
+
+#credit-icon > a:link, #credit-icon > a:visited {
+    text-decoration: none;
+    color: inherit;
 }
