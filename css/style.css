@@ -4,9 +4,8 @@
 }
 
 body {
-    display: inline-block;
-    font-family: 'Open Sans', sans-serif;
     display: grid;
+    font-family: 'Open Sans', sans-serif;
     min-height: 100vh;
     grid-template-columns: 300px 1fr;
     grid-auto-rows: 120px 10px 1fr 100px;
@@ -42,9 +41,13 @@ header {
     color: aliceblue;
 }
 
+header span {
+    display: block;
+}
+
 header > h1 {
     font-size: 4em;
-    display: inline;
+    display: block;
     vertical-align: sub;
 }
 
@@ -91,14 +94,12 @@ footer p {
 
 @media only screen and (max-width: 600px) {
     body {
-        grid-template-columns: 1fr;
-        grid-auto-rows: 1fr;
+        display: grid;
+        grid-template-columns: auto;
+        grid-auto-rows: auto;
         grid-template-areas: 'myheader' 'myaside' 'myarticle' 'myfooter';
     }
     
-    header span, header h1 {
-        display: block;
-    }
 
     aside {
         text-align: center;
