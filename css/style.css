@@ -48,7 +48,6 @@ header span {
 header > h1 {
     font-size: 4em;
     display: block;
-    vertical-align: sub;
 }
 
 .perfil {
