@@ -95,6 +95,10 @@ footer p {
     font-weight: bold;
 }
 
+#author:visited {
+    color: inherit;
+}
+
 @media only screen and (max-width: 600px) {
     body {
         display: grid;
