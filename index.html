@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="js/index.js"></script>
     <link
       rel="shortcut icon"
       href="img/favicon_github2.png"
@@ -11,69 +12,106 @@
     />
     <!-- Favicon icon author - https://www.iconfinder.com/Side_Project -->
     <link rel="stylesheet" href="css/style.min.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Darker+Grotesque|Open+Sans|Raleway&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
+    <script
+      src="https://kit.fontawesome.com/179a3dc0a2.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Rafael Cerqueira - Developer</title>
   </head>
 
   <body>
     <header>
-      <h1>Rafael Cerqueira</h1>
-      <span>{ Dev in Dev }</span>
-    </header>
-    <div class="headline"></div>
-    <aside>
-      <div class="perfil">
-        <img src="img/face.jpg" alt="Perfil" />
-        <h2>Rafael S Cerqueira<br />Programador e Desenvolvedor</h2>
-        <br />
-        <p>Langs: <em>PHP, Java, JavaScript, Python, Dart</em></p>
-        <p>Skills: <em>Docker, Nodejs, Vue, React, React Native</em></p>
-        <p>Loading: <em>Laravel, Adonis, GraphQL, Flutter</em></p>
-        <p>Database: <em>MySQL, MongoDB, PostgreSQL, Firebase</em></p>
+      <nav>
+        <ul class="flex-nav">
+          <li>
+            <a
+              href="#home"
+              id="homepage"
+              class="active nav-menu"
+              onclick="loadDoc('homepage')"
+              >HOME</a
+            >
+          </li>
+          <li>
+            <a
+              href="#projects"
+              id="projects"
+              class="nav-menu"
+              onclick="loadDoc('projects')"
+              >PROJETOS</a
+            >
+          </li>
+          <li>
+            <a
+              href="#skills"
+              id="skills"
+              class="nav-menu"
+              onclick="loadDoc('skills')"
+              >SKILLS</a
+            >
+          </li>
+          <div class="pipe"></div>
+          <li>
+            <a href="https://github.com/rafascerqueira" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/rafascerqueira/"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a href="mailto:rafascerqueira.dev@gmail.com"
+              ><i class="fas fa-envelope"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="logo">
+        <img src="img/logo1.png" alt="logo" />
       </div>
-      <span class="side-line"></span>
-    </aside>
-    <span class="mob-line"></span>
-    <main>
-      <h2>Projeto Vendinhas.</h2>
-      <p class="p-first">
-        A criação deste projeto nasceu da necessidade de ajudar pequenas
-        consultoras de vendas a organizar e manipular o estoque, criar e
-        controlar vendas e controle de cobrança dos seus clientes. Isso reduzirá
-        o tempo de resposta e ainda permitirá ao cliente conferir o pedido feito
-        a consultora, para que o mesmo possa acompanhar e ter um feedback da
-        venda que foi realizada. Haverá um espaço de login exclusivo para
-        clientes e através deste (ou por e-mail) as informações estarão
-        disponíveis.
-      </p>
-      <p class="p-default">
-        A primeira etapa do desenvolvimento é a implementação do backend,
-        desenvolvido em Node.JS, em seguida o frontend que está sendo
-        desenvolvido em React.JS e por último o mobile em React Native. São as
-        tecnologias que dão uma flexibilidade para desenvolver e a curvatura de
-        aprendizado é minima, além do meu gosto como desenvolvedor.
-      </p>
-      <p id="author" class="p-default">
-        Você pode conferir o backend em:
-        <a href="https://github.com/rafascerqueira/Backend_vendinhas"
-          >Github Vendinhas</a
-        >
-      </p>
+    </header>
+    <main id="main">
+      <aside>
+        <img src="img/face.jpg" alt="imagem de perfil" />
+      </aside>
+      <section>
+        <i class="fas fa-code" id="iconbg"></i>
+        <h1>Fullstack Developer</h1>
+        <h2 class="description-sub">
+          JavaScript | Node.JS | Vue | React | Mobile
+        </h2>
+        <br />
+        <br />
+        <h3>&mdash; Olá, me chamo Rafael!</h3>
+        <p class="indent">
+          Sou um programador e desenvolvedor dedicado nas mais diversas
+          tecnolgias que estão destacadas no mercado. Concentrando meus esforços
+          nas stacks com maior nível de convergência e menor curvatura no
+          desenvolvimento dos projetos que surgem (e que tenho trabalhado).
+        </p>
+        <p>
+          Ex-aluno da Unicarioca, experiência fora do mercado de TI como
+          Contabilidade e Empreendimentos Financeiros, consigo abstrair as
+          grandes dificuldades que estes setores dispõe devido as mudanças
+          constantes e adaptações para adequar as novas realidades. Certamente
+          não é novidade alguma para um mercado tão pujante como o de
+          Desenvolvimento, que está acompanhando o modelo de negócio dos seus
+          clientes para justificar a sua eficiência e necessidade num mundo tão
+          cheio de informações.
+        </p>
+      </section>
     </main>
     <footer>
-      <span id="author">
-        <a href="https://github.com/rafascerqueira">Rafael Cerqueira</a>
-      </span>
-      <span>
-        - Developer in development
-      </span>
+      <div>
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        &mdash; Rafael Cerqueira.
+      </div>
     </footer>
   </body>
 </html>
