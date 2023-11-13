@@ -1,14 +1,20 @@
-import { About } from "@pages/About";
+import { Contact } from "@pages/Contact";
 import { Home } from "@pages/Home";
-import { Projects } from "@pages/Projects";
+import { Portfolio } from "@pages/Portfolio";
+import { Service } from "@pages/Service";
+import { Skills } from "@pages/Skills";
 import { Route, Routes } from "react-router-dom";
 
 export function PageRoutes() {
   return (
-    <Routes>
-      <Route path="/" element={<Home /> } />
-      <Route path="/projects" element={<Projects />} />
-      <Route path="/about" element={<About />} />
-    </Routes>
+    <div className="pages">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/service" element={<Service />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </div>
   );
 }
