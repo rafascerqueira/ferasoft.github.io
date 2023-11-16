@@ -5,7 +5,7 @@ function Portfolio() {
       <div className="flex-col">
 
       <img className="img-content" src="vendinhas.png" alt="vendinhas" />
-      <p>
+      <p className="describe">
         This project was created to help small sales consultants organize and
         manage their inventory, create and track sales, and manage customer
         billing. This will reduce response time and allow customers to check the

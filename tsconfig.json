@@ -9,6 +9,7 @@
     /* Bundler mode */
     "moduleResolution": "Node",
     "allowImportingTsExtensions": true,
+    "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
@@ -22,7 +23,8 @@
     "baseUrl": "./src",
     "paths": {
       "@components/*": ["components/*"],
-      "@pages/*": ["pages/*"]
+      "@pages/*": ["pages/*"],
+      "@utils/*": ["utils/*"],
     }
   },
   "include": ["src"],

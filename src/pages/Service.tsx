@@ -3,7 +3,7 @@ function Service() {
     <>
       <div className="content-container">
         <h2 className="subtitle-page">Service</h2>
-        <ol>
+        <ol className="olist">
           <li>
             <h3>Development</h3>
             <p>

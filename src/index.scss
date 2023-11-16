@@ -1,9 +1,18 @@
-@keyframes showcontent {
+@keyframes fadeIn {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
   }
 }
 
@@ -33,7 +42,7 @@ html {
 }
 
 .pin-icon {
-  background-image: url("pin.png");
+  background-image: url("/pin.png");
   height: 17px;
   width: 14px;
   display: inline-block;
@@ -65,17 +74,24 @@ html {
   align-items: center;
   justify-content: center;
   padding: 0 4rem;
+  animation: fadeIn 1.2s ease-out;
   .spec-description {
     padding: 0 12px;
   }
   ol > li {
     padding: 8px 0;
   }
+  .contact-me {
+    text-align: center;
+    p {
+      padding: 1rem;
+    }
+  }
 }
 
 .content-container::before {
   content: "";
-  background-image: url("bg-cloud.webp");
+  background-image: url("/bg-abstract.webp");
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -83,7 +99,7 @@ html {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  opacity: 0.2;
+  opacity: 0.8;
   z-index: -1;
 }
 
@@ -126,8 +142,16 @@ html {
   padding: 2rem;
 }
 
+.describe {
+  margin: 32px 0;
+}
+
 .aside-menu {
   text-transform: uppercase;
+}
+
+.mobile-menu {
+  display: none;
 }
 
 .located {
@@ -148,10 +172,74 @@ ul {
   }
 }
 
+@media screen and (max-height: 640px) {
+  .aside {
+    height: fit-content;
+  }
+}
+
 @media screen and (max-width: 640px) {
+  .page-layout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profile-pic {
+    max-width: 8rem;
+    max-height: 8rem;
+    border-radius: 50%;
+  }
+
+  .aside {
+    flex-shrink: 0;
+    width: 100%;
+    height: fit-content;
+    padding: 1rem 0.5rem;
+    text-align: center;
+    overflow: hidden;
+    background-color: #d9d9d9;
+    .main-title,
+    .subtitles {
+      color: #1e1e1e;
+    }
+  }
+
+  .aside-menu {
+    display: none;
+  }
+
+  .mobile-menu {
+    background-color: #000000ca;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    animation: fadeIn 1.2s ease-out;
+  }
+
+  .show-menu {
+    display: inline-block;
+  }
+
+  .close-menu {
+    display: none;
+  }
+
+  .olist {
+    margin-top: 16rem;
+  }
+
+  .content-container {
+    flex-wrap: wrap;
+    ul {
+      padding: 0;
+    }
+  }
+
   .content-container::before {
     content: "";
-    background-image: url("bg-abstract.webp");
+    background-image: url("/bg-abstract.webp");
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -161,5 +249,32 @@ ul {
     left: 0px;
     opacity: 1;
     z-index: -1;
+  }
+
+  .located {
+    margin: 1rem 4rem;
+  }
+
+  .menu-open {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 28px;
+    background-image: url("/open.png");
+    height: 48px;
+    width: 48px;
+    z-index: 2;
+  }
+
+  .menu-close {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 32px;
+    background-image: url("/close.png");
+    height: 48px;
+    width: 48px;
+    display: inline-block;
+    z-index: 2;
   }
 }
