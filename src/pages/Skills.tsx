@@ -18,7 +18,7 @@ function Skills() {
             <li>React</li>
             <li>Tailwind</li>
             <li>NextJS</li>
-            <li>Figma</li>
+            <li>Vue</li>
           </ul>
         </div>
         <div className="spec-description">
